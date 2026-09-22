@@ -5,6 +5,7 @@ def get_name() :
 # multiple parameters, void return type
 
 def print_sum (a : int, b : int) -> None :
+  """ This function returns sum of two numbers """   # Doc String
   print (a+b);
 
 # multiple parameters, single return type
@@ -23,6 +24,10 @@ def get_user_data (user : dict) -> tuple [str, int, float] :
   return user["name"], user["age"], user ["salary"];
 
 print (get_name());
+
+help (get_name);
+
+print (print_sum.__doc__);
 
 print_sum (5, 2);
 
