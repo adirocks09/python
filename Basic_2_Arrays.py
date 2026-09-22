@@ -10,6 +10,10 @@ print(numbers[2]);
 
 # print(numbers[10]);
 
+print (f" Contains(44) :  { 44 in numbers }");
+
+print (f" Contains(100) :  { 100 in numbers }");
+
 print("\n********************************\n");
 
 for index, value in enumerate (numbers):

@@ -90,8 +90,23 @@ department = None;
 
 print(department);
 
+print(type(department));
+
 if (department is None) :
   print ("Department Not Found");
 
 if(salary is not None) :
   print ("Salary is Available");
+
+list_1 = [1,2,3];
+
+list_2 = [1,2,3];
+
+list_3 = list_1;
+
+print (list_1 == list_2)  # Compares data 
+print (list_1 == list_3)  # Compares data
+
+print (list_1 is list_2)  # Compares reference
+print (list_1 is list_3)  # Compares reference
+
