@@ -2,8 +2,6 @@ from Vehicle import Vehicle
 
 class Car (Vehicle): 
 
-  __type = "Sedan";
-
   def __init__(self, color, engine, seats, gearType, steering) :
     super().__init__(color, engine, seats);
     self.__gearType = gearType
