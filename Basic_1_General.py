@@ -1,6 +1,6 @@
 print("\n*************Hello World************************\n");
 
-name = "Aditya";
+name = input ("Enter your name : ")  # takes input from user
 
 age = 34;
 
@@ -110,3 +110,29 @@ print (list_1 == list_3)  # Compares data
 print (list_1 is list_2)  # Compares reference
 print (list_1 is list_3)  # Compares reference
 
+
+print("\n**************Date & Time******************\n");
+
+# Date Time Manipulation
+
+from datetime import datetime
+from zoneinfo import ZoneInfo
+
+now = datetime.now(ZoneInfo("GMT"))
+
+# Extract individual fields
+
+print(f"Date & Time : {now} :: {type(now)}")
+print(f"Year: {now.year} :: {type(now.year)}")
+print(f"Month: {now.month} :: {type(now.month)}")
+print(f"Day: {now.day} :: {type(now.day)}")
+print(f"Hour: {now.hour} :: {type(now.hour)}")
+print(f"Minute: {now.minute} :: {type(now.minute)}")
+print(f"Second: {now.second} :: {type(now.second)}")
+print(f"Microsecond: {now.microsecond} :: {type(now.microsecond)}")
+print(f"Timezone Info: {now.tzinfo} :: {type(now.tzinfo)}")
+
+# formatting date into String
+
+formatted_date = now.strftime("%d-%m-%Y %H::%M::%S %Z") 
+print (formatted_date)
