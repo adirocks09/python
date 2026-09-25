@@ -58,6 +58,29 @@ for index, value in enumerate(data_tuple) :
 
 print("\n********************************\n");
 
+tuple1 = ("a", "b" , "c")
+tuple2 = (1, 2, 3)
+
+# tuple operations
+tuple_add = tuple1 + tuple2
+print(tuple_add)
+
+fruits = ("apple", "banana", "cherry", "strawberry", "raspberry")
+tuple_multiply = fruits * 2
+
+print(tuple_multiply)
+
+# tuple destructurization
+(x1, x2, x3) = tuple1
+print (x1, x2, x3)
+
+(f1, *f2, f3) = fruits
+print (f1, f2, f3)
+
+# Exception is thrown during destructurization if number of lhs elements and rhs elements are not same
+#(t1, t2, t3) = fruits
+#print (t1, t2, t3)
+
 # set : unique values 
 data_set = {10, 20, 30, 20}
 
