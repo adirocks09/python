@@ -1,0 +1,37 @@
+-----------Creating Virtual Environments in Python for Project 1
+Step 1 : python -m venv Project_1
+
+-----------Activating Created Virtual Environment
+Step 2 : Project_1\Scripts\activate
+
+-----------Install Depedencies
+
+-----------Install strands-agents (Strands-Agents SDK)
+Step 3 : pip install strands-agents
+
+-----------Install boto3 (AWS SDK)
+Step 4 : pip install boto3
+
+-----------Install jupyter notebook
+Step 5 : pip install jupyter
+
+-----------Install python kernel for Jupyter Notebook
+Step 6 : pip install ipykernel
+
+-----------Activate installed python kernel for jupyter notebook
+Step 7 : python -m ipykernel install --user --name Project_1 --display-name "Kernel_Project_1"
+
+-----------Launch Jupyter Notebook
+Step 8 : jupyter notebook
+
+
+-----------Additional Points 
+
+1. strands-agents installs the core Python Software Development Kit (SDK) for Strands Agents, which is an open-source framework used to build and orchestrate autonomous AI agents
+
+2. boto3 is the official AWS SDK (Software Development Kit) for Python
+
+3. A better way to install Depedencies is to list them in a file like depedencies.txt and run the below command
+
+pip install -r dependencies.txt
+
