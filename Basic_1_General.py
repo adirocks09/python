@@ -134,9 +134,11 @@ print (list_1 is list_2)  # Compares reference
 print (list_1 is list_3)  # Compares reference
 
 
+# Date Time Manipulation
+
 print("\n**************Date & Time******************\n");
 
-# Date Time Manipulation
+# import statements can be declared just before using it at any point in the file but its recommended to use it at the beginning of the file
 
 from datetime import datetime
 from zoneinfo import ZoneInfo
